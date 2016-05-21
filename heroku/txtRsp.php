@@ -5,7 +5,7 @@
  * http://www.twilio.com/docs/libraries
 */
  
-include('Services/Twilio.php');
+include('../Services/Twilio.php');
  
 /* Controller: Match the keyword with the customized SMS reply. */
 function index(){
