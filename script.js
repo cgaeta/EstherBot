@@ -12,29 +12,10 @@ module.exports = new Script({
     },
 
     start: {
-        prompt: (bot) => {
-            return bot.say('Hi! I\'m Chris\'s bot!')
-                .then(() => 'askname');
+        receive: (bot) => {
+            return bot.say('So you want to learn about Esther? Just say HELLO to get started.')
+                .then(() => 'speak');
         }
-    },
-    
-    askname: {
-      prompt: (bot) => bot.say('What\'s your name?'),
-      receive: (bot, message) => {
-        const name = message.text;
-        return bot.setProp('name', name)
-          .then(() => bot.say('Hi ${name}! Am I pronouncing that right? %[Yes, that\'s right](postback: correctName) %[Not quite](postback: incorrectName)'));
-      }
-    },
-    
-    incorrectName: {
-        prompt: (bot) => bot.say("Oops... Sorry, let me rewind a bit...")
-            .then(() => 'askName')
-    },
-    
-    correctName: {
-      prompt: (bot) => bot.say("Hey, nice to meet you, ${name}!")
-        .then(() => 'speak');
     },
 
     speak: {
