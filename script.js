@@ -14,11 +14,11 @@ module.exports = new Script({
     start: {
         prompt: (bot) => {
             return bot.say('Hi! I\'m Chris\'s bot!')
-                .then(() => 'askName');
+                .then(() => 'askname');
         }
     },
     
-    askName: {
+    askname: {
       prompt: (bot) => bot.say('What\'s your name?'),
       receive: (bot, message) => {
         const name = message.text;
@@ -34,7 +34,7 @@ module.exports = new Script({
     
     correctName: {
       prompt: (bot) => bot.say("Hey, nice to meet you, ${name}!")
-        .then(() => 'speak');)
+        .then(() => 'speak');
     },
 
     speak: {
