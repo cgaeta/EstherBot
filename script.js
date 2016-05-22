@@ -23,7 +23,7 @@ module.exports = new Script({
       receive: (bot, message) => {
         const name = message.text;
         return bot.setProp('name', name)
-          .then(() => bot.say('Hi ${name}! Am I pronouncing that right? %[Yes, that\'s right](postback: correctName) %[Not quite](postback: incorrectName)'))
+          .then(() => bot.say('Hi ${name}! Am I pronouncing that right? %[Yes, that\'s right](postback: correctName) %[Not quite](postback: incorrectName)'));
       }
     },
     
