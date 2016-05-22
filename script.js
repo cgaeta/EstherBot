@@ -12,9 +12,9 @@ module.exports = new Script({
     },
 
     start: {
-        receive: (bot) => {
+        prompt: (bot) => {
             return bot.say('Hi! I\'m Chris\'s bot!')
-                .then(() => 'speak');
+                .then(() => 'askName');
         }
     },
     
@@ -29,7 +29,7 @@ module.exports = new Script({
     
     incorrectName: {
         prompt: (bot) => bot.say("Oops... Sorry, let me rewind a bit...")
-            .then(() => 'askName');
+            .then(() => 'askName')
     },
     
     correctName: {
