@@ -1,11 +1,11 @@
 {
     "BOT": "Hi there!\nThis is a personal bot I forked and modified from Esther, a Product Marketer from San Francisco.\n![esther](https://raw.githubusercontent.com/esthercrawford/smooch-bot-example/master/img/esther.jpg)\nWant to see her bot on Github, or do you want to get back to Chris? %[I'm here for the bot](https://github.com/esthercrawford/EstherBot) %[Chris](postback: chris)",
-    "HELLO": "Hey, how's it going? I'm Chris's bot!\nWhat can I help you with? %[Bot](postback: bot) %[Chris](postback: chris)",
+    "HELLO": "Hey, how's it going? I'm Chris's bot!\nWhat can I help you with? %[Bot](postback:bot) %[Chris](postback:chris)",
     "HI": "postback - HELLO",
     "HEY": "postback - HELLO",
     "YO": "postback - HELLO",
-    "CHRIS": "Chris is a UX designer and web developer from Indiana.\n %[Education](postback: education) %[Career](postback: career) %[Skills](postback: skills) %[Interests](postback: interests)",
-    "CAREER": "Chris has worked at Purdue as an iOS app developer, teaching assistant, and a UX designer/developer.\nWhat do you want to know more about?\n %[iOS app](postback: isee) %[Teaching Assistant](postback: ta) %[UX Developer](postback: ux developer)",
+    "CHRIS": "Chris is a UX designer and web developer from Indiana.\n %[Education](postback:education) %[Career](postback:career) %[Skills](postback:skills) %[Interests](postback:interests)",
+    "CAREER": "Chris has worked at Purdue as an iOS app developer, teaching assistant, and a UX designer/developer.\nWhat do you want to know more about?\n %[iOS app](postback:isee) %[Teaching Assistant](postback:ta) %[UX Developer](postback:ux developer)",
     
     "TELL HIM": "Let's tweet @ Chris so she knows you're setting a bot up. Here's a tweet that's ready to go: %[Tweet Esther](http://bit.ly/estherbot-tweet)",
     "I LOVE YOU": "Uhhh... cool?",
