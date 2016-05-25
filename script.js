@@ -59,6 +59,10 @@ module.exports = new Script({
                 }
 
                 var response = scriptRules[upperText];
+                
+                if(response.indexOf("postback - ") == 0)
+                    response = scriptRules[response.substring(11)];
+                    
                 var lines = response.split('\n');
 
                 var p = Promise.resolve();
