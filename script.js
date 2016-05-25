@@ -13,9 +13,6 @@ module.exports = new Script({
 
     start: {
         receive: (bot) => {
-        //prompt: (bot) => {
-            //return bot.say('So you want to learn about Esther? Just say HELLO to get started.')
-                //.then(() => 'speak');
             return bot.say('Hi! I\'m Chris\'s bot!')
                 .then(() => 'askname');
         }
@@ -26,23 +23,11 @@ module.exports = new Script({
         receive: (bot, message) => {
             const name = message.text;
             return bot.setProp('name', name)
-                .then(() => bot.say('Cool, hi ${name}!'))
+                .then(() => bot.say(`Cool, hi ${name}! What can I help you with?`)
+                .then(() => bot.say(`You can try to type what you want, but it might be easier to use these prompts: %[About the bot](postback: bot) %[About Chris](postback: chris)`))
                 .then(() => 'speak');
         }
     },
-    
-    /*
-    askName: {
-        prompt: (bot) => bot.say('What\'s your name?'),
-        receive: (bot, message) => {
-            const name = message.text;
-            return bot.setProp('name', name)
-                .then(() => bot.say(`Great! I'll call you ${name}
-Is that OK? %[Yes](postback:yes) %[No](postback:no)`))
-                .then(() => 'finish');
-        }
-    },
-    */
 
     speak: {
         receive: (bot, message) => {
