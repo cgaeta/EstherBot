@@ -1,5 +1,5 @@
 {
-    "BOT": "Hi there!\nThis is a personal bot I forked and modified from Esther, a Product Marketer from San Francisco.\n![esther](https://raw.githubusercontent.com/esthercrawford/smooch-bot-example/master/img/esther.jpg)\nWant to see her bot on Github, or do you want to get back to Chris? %[I'm here for the bot](https://github.com/esthercrawford/EstherBot) %[Chris](postback: chris)",
+    "BOT": "Hi there!\nThis is a personal bot I forked and modified from Esther, a Product Marketer from San Francisco.\n![esther](https://raw.githubusercontent.com/esthercrawford/smooch-bot-example/master/img/esther.jpg)\nWant to see her bot on Github, or do you want to get back to Chris? %[I'm here for the bot](https://github.com/esthercrawford/EstherBot) %[Chris](postback:chris)",
     "HELLO": "Hey, how's it going? I'm Chris's bot!\nWhat can I help you with? %[Bot](postback:bot) %[Chris](postback:chris)",
     "HI": "postback - HELLO",
     "HEY": "postback - HELLO",
