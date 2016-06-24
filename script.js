@@ -24,7 +24,7 @@ module.exports = new Script({
             const name = message.text;
             return bot.setProp('name', name)
                 .then(() => bot.say(`Cool, hi ${name}! What can I help you with?`))
-                .then(() => bot.say(`You can try to type what you want, but it might be easier to use these prompts: %[About the bot](postback: bot) %[About Chris](postback: chris)`))
+                .then(() => bot.say(`You can try to type what you want, but it might be easier to use these prompts: %[About the bot](postback:bot) %[About Chris](postback:chris)`))
                 .then(() => 'speak');
         }
     },
